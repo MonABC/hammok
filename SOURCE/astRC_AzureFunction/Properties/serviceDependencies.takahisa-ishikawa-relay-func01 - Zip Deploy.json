@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/takahisa-ishikawa-relaydb01/databases/takahisa_ishikawa_relaydb",
+      "type": "mssql.azure",
+      "connectionId": "sqldb_connection"
+    }
+  }
+}

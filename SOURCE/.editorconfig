@@ -1,0 +1,365 @@
+# NOTE: Requires **VS2019 16.3** or later
+
+# All Rules Enabled as build warnings
+# Description: All Rules are enabled as build warnings. Rules with IsEnabledByDefault = false are force enabled as build warnings.
+
+# Code files
+[*.{cs,vb}]
+dotnet_diagnostic.CA1000.severity = warning
+dotnet_diagnostic.CA1003.severity = warning
+dotnet_diagnostic.CA1012.severity = warning
+dotnet_diagnostic.CA1014.severity = warning
+dotnet_diagnostic.CA1016.severity = warning
+dotnet_diagnostic.CA1017.severity = warning
+dotnet_diagnostic.CA1018.severity = warning
+dotnet_diagnostic.CA1031.severity = warning
+dotnet_diagnostic.CA1034.severity = warning
+dotnet_diagnostic.CA1041.severity = warning
+dotnet_diagnostic.CA1047.severity = warning
+dotnet_diagnostic.CA1060.severity = warning
+dotnet_diagnostic.CA1061.severity = warning
+dotnet_diagnostic.CA1063.severity = warning
+dotnet_diagnostic.CA1067.severity = warning
+dotnet_diagnostic.CA1069.severity = warning
+dotnet_diagnostic.CA1401.severity = warning
+dotnet_diagnostic.CA1417.severity = warning
+dotnet_diagnostic.CA1419.severity = warning
+dotnet_diagnostic.CA1509.severity = warning
+dotnet_diagnostic.CA1707.severity = silent
+dotnet_diagnostic.CA1708.severity = warning
+dotnet_diagnostic.CA1712.severity = warning
+dotnet_diagnostic.CA1713.severity = warning
+dotnet_diagnostic.CA1715.severity = warning
+dotnet_diagnostic.CA1721.severity = warning
+dotnet_diagnostic.CA1821.severity = warning
+dotnet_diagnostic.CA1842.severity = warning
+dotnet_diagnostic.CA1843.severity = warning
+dotnet_diagnostic.CA1845.severity = warning
+dotnet_diagnostic.CA1848.severity = warning
+dotnet_diagnostic.CA2017.severity = warning
+dotnet_diagnostic.CA2018.severity = warning
+dotnet_diagnostic.CA2101.severity = warning
+dotnet_diagnostic.CA2153.severity = warning
+dotnet_diagnostic.CA2200.severity = warning
+dotnet_diagnostic.CA2201.severity = warning
+dotnet_diagnostic.CA2207.severity = warning
+dotnet_diagnostic.CA2214.severity = warning
+dotnet_diagnostic.CA2217.severity = warning
+dotnet_diagnostic.CA2219.severity = warning
+dotnet_diagnostic.CA2226.severity = warning
+dotnet_diagnostic.CA2229.severity = warning
+dotnet_diagnostic.CA2237.severity = warning
+dotnet_diagnostic.CA2241.severity = warning
+dotnet_diagnostic.CA2242.severity = warning
+dotnet_diagnostic.CA2244.severity = warning
+dotnet_diagnostic.CA2246.severity = warning
+dotnet_diagnostic.CA2248.severity = warning
+dotnet_diagnostic.CA2253.severity = warning
+dotnet_diagnostic.CA2254.severity = warning
+dotnet_diagnostic.CA2256.severity = warning
+dotnet_diagnostic.CA2257.severity = warning
+dotnet_diagnostic.CA2258.severity = warning
+dotnet_diagnostic.CA3009.severity = warning
+dotnet_diagnostic.CA3010.severity = warning
+dotnet_diagnostic.CA3011.severity = warning
+dotnet_diagnostic.CA5351.severity = warning
+dotnet_diagnostic.CA5367.severity = warning
+dotnet_diagnostic.CA5376.severity = warning
+dotnet_diagnostic.CA5380.severity = warning
+dotnet_diagnostic.CA5381.severity = warning
+dotnet_diagnostic.CA5390.severity = warning
+dotnet_diagnostic.CA5399.severity = warning
+dotnet_diagnostic.CA1001.severity = silent
+dotnet_diagnostic.CA1002.severity = silent
+dotnet_diagnostic.CA1005.severity = silent
+dotnet_diagnostic.CA1008.severity = silent
+dotnet_diagnostic.CA1010.severity = silent
+dotnet_diagnostic.CA1019.severity = silent
+dotnet_diagnostic.CA1021.severity = silent
+dotnet_diagnostic.CA1024.severity = silent
+dotnet_diagnostic.CA1027.severity = silent
+dotnet_diagnostic.CA1028.severity = silent
+dotnet_diagnostic.CA1030.severity = silent
+dotnet_diagnostic.CA1032.severity = silent
+dotnet_diagnostic.CA1033.severity = silent
+dotnet_diagnostic.CA1036.severity = silent
+dotnet_diagnostic.CA1040.severity = silent
+dotnet_diagnostic.CA1043.severity = silent
+dotnet_diagnostic.CA1044.severity = silent
+dotnet_diagnostic.CA1045.severity = silent
+dotnet_diagnostic.CA1046.severity = silent
+dotnet_diagnostic.CA1050.severity = silent
+dotnet_diagnostic.CA1051.severity = silent
+dotnet_diagnostic.CA1052.severity = silent
+dotnet_diagnostic.CA1054.severity = silent
+dotnet_diagnostic.CA1055.severity = silent
+dotnet_diagnostic.CA1056.severity = silent
+dotnet_diagnostic.CA1058.severity = silent
+dotnet_diagnostic.CA1062.severity = silent
+dotnet_diagnostic.CA1062.severity = silent
+dotnet_diagnostic.CA1064.severity = silent
+dotnet_diagnostic.CA1065.severity = silent
+dotnet_diagnostic.CA1066.severity = silent
+dotnet_diagnostic.CA1068.severity = silent
+dotnet_diagnostic.CA1070.severity = silent
+dotnet_diagnostic.CA1200.severity = silent
+dotnet_diagnostic.CA1303.severity = silent
+dotnet_diagnostic.CA1304.severity = silent
+dotnet_diagnostic.CA1305.severity = silent
+dotnet_diagnostic.CA1307.severity = silent
+dotnet_diagnostic.CA1308.severity = silent
+dotnet_diagnostic.CA1309.severity = silent
+dotnet_diagnostic.CA1310.severity = silent
+dotnet_diagnostic.CA1416.severity = silent
+dotnet_diagnostic.CA1418.severity = silent
+dotnet_diagnostic.CA1501.severity = warning
+dotnet_diagnostic.CA1502.severity = warning
+dotnet_diagnostic.CA1505.severity = warning
+dotnet_diagnostic.CA1506.severity = warning
+dotnet_diagnostic.CA1507.severity = silent
+dotnet_diagnostic.CA1508.severity = warning
+dotnet_diagnostic.CA1700.severity = silent
+dotnet_diagnostic.CA1710.severity = silent
+dotnet_diagnostic.CA1711.severity = silent
+dotnet_diagnostic.CA1716.severity = silent
+dotnet_diagnostic.CA1720.severity = silent
+dotnet_diagnostic.CA1724.severity = silent
+dotnet_diagnostic.CA1725.severity = silent
+dotnet_diagnostic.CA1802.severity = silent
+dotnet_diagnostic.CA1805.severity = silent
+dotnet_diagnostic.CA1806.severity = silent
+dotnet_diagnostic.CA1810.severity = silent
+dotnet_diagnostic.CA1812.severity = silent
+dotnet_diagnostic.CA1813.severity = silent
+dotnet_diagnostic.CA1814.severity = silent
+dotnet_diagnostic.CA1815.severity = silent
+dotnet_diagnostic.CA1816.severity = silent
+dotnet_diagnostic.CA1819.severity = silent
+dotnet_diagnostic.CA1820.severity = silent
+dotnet_diagnostic.CA1822.severity = silent
+dotnet_diagnostic.CA1823.severity = silent
+dotnet_diagnostic.CA1824.severity = silent
+dotnet_diagnostic.CA1825.severity = silent
+dotnet_diagnostic.CA1826.severity = silent
+dotnet_diagnostic.CA1827.severity = silent
+dotnet_diagnostic.CA1828.severity = silent
+dotnet_diagnostic.CA1829.severity = silent
+dotnet_diagnostic.CA1830.severity = silent
+dotnet_diagnostic.CA1831.severity = silent
+dotnet_diagnostic.CA1832.severity = silent
+dotnet_diagnostic.CA1833.severity = silent
+dotnet_diagnostic.CA1834.severity = silent
+dotnet_diagnostic.CA1835.severity = silent
+dotnet_diagnostic.CA1836.severity = silent
+dotnet_diagnostic.CA1837.severity = silent
+dotnet_diagnostic.CA1838.severity = silent
+dotnet_diagnostic.CA1839.severity = silent
+dotnet_diagnostic.CA1840.severity = silent
+dotnet_diagnostic.CA1841.severity = silent
+dotnet_diagnostic.CA1844.severity = silent
+dotnet_diagnostic.CA1846.severity = silent
+dotnet_diagnostic.CA1847.severity = silent
+dotnet_diagnostic.CA1849.severity = silent
+dotnet_diagnostic.CA2000.severity = silent
+dotnet_diagnostic.CA2002.severity = silent
+dotnet_diagnostic.CA2007.severity = silent
+dotnet_diagnostic.CA2008.severity = silent
+dotnet_diagnostic.CA2009.severity = silent
+dotnet_diagnostic.CA2011.severity = silent
+dotnet_diagnostic.CA2012.severity = silent
+dotnet_diagnostic.CA2013.severity = silent
+dotnet_diagnostic.CA2014.severity = silent
+dotnet_diagnostic.CA2015.severity = silent
+dotnet_diagnostic.CA2016.severity = silent
+dotnet_diagnostic.CA2100.severity = silent
+dotnet_diagnostic.CA2109.severity = silent
+dotnet_diagnostic.CA2119.severity = silent
+dotnet_diagnostic.CA2208.severity = silent
+dotnet_diagnostic.CA2211.severity = silent
+dotnet_diagnostic.CA2213.severity = silent
+dotnet_diagnostic.CA2215.severity = silent
+dotnet_diagnostic.CA2216.severity = silent
+dotnet_diagnostic.CA2225.severity = silent
+dotnet_diagnostic.CA2227.severity = silent
+dotnet_diagnostic.CA2231.severity = silent
+dotnet_diagnostic.CA2234.severity = silent
+dotnet_diagnostic.CA2235.severity = silent
+dotnet_diagnostic.CA2243.severity = silent
+dotnet_diagnostic.CA2245.severity = silent
+dotnet_diagnostic.CA2247.severity = silent
+dotnet_diagnostic.CA2249.severity = silent
+dotnet_diagnostic.CA2250.severity = silent
+dotnet_diagnostic.CA2251.severity = silent
+dotnet_diagnostic.CA2252.severity = silent
+dotnet_diagnostic.CA2255.severity = silent
+dotnet_diagnostic.CA2300.severity = silent
+dotnet_diagnostic.CA2301.severity = silent
+dotnet_diagnostic.CA2302.severity = silent
+dotnet_diagnostic.CA2305.severity = silent
+dotnet_diagnostic.CA2310.severity = silent
+dotnet_diagnostic.CA2311.severity = silent
+dotnet_diagnostic.CA2312.severity = silent
+dotnet_diagnostic.CA2315.severity = silent
+dotnet_diagnostic.CA2321.severity = silent
+dotnet_diagnostic.CA2322.severity = silent
+dotnet_diagnostic.CA2326.severity = silent
+dotnet_diagnostic.CA2327.severity = silent
+dotnet_diagnostic.CA2328.severity = silent
+dotnet_diagnostic.CA2329.severity = silent
+dotnet_diagnostic.CA2330.severity = silent
+dotnet_diagnostic.CA2350.severity = silent
+dotnet_diagnostic.CA2351.severity = silent
+dotnet_diagnostic.CA2352.severity = silent
+dotnet_diagnostic.CA2353.severity = silent
+dotnet_diagnostic.CA2354.severity = silent
+dotnet_diagnostic.CA2355.severity = silent
+dotnet_diagnostic.CA2356.severity = silent
+dotnet_diagnostic.CA2361.severity = silent
+dotnet_diagnostic.CA2362.severity = silent
+dotnet_diagnostic.CA3001.severity = silent
+dotnet_diagnostic.CA3002.severity = silent
+dotnet_diagnostic.CA3003.severity = silent
+dotnet_diagnostic.CA3004.severity = silent
+dotnet_diagnostic.CA3005.severity = silent
+dotnet_diagnostic.CA3006.severity = silent
+dotnet_diagnostic.CA3007.severity = silent
+dotnet_diagnostic.CA3008.severity = silent
+dotnet_diagnostic.CA3012.severity = silent
+dotnet_diagnostic.CA3061.severity = silent
+dotnet_diagnostic.CA3075.severity = silent
+dotnet_diagnostic.CA3076.severity = silent
+dotnet_diagnostic.CA3077.severity = silent
+dotnet_diagnostic.CA3147.severity = silent
+dotnet_diagnostic.CA5350.severity = silent
+dotnet_diagnostic.CA5358.severity = silent
+dotnet_diagnostic.CA5359.severity = silent
+dotnet_diagnostic.CA5360.severity = silent
+dotnet_diagnostic.CA5361.severity = silent
+dotnet_diagnostic.CA5362.severity = silent
+dotnet_diagnostic.CA5363.severity = silent
+dotnet_diagnostic.CA5364.severity = silent
+dotnet_diagnostic.CA5365.severity = silent
+dotnet_diagnostic.CA5366.severity = silent
+dotnet_diagnostic.CA5368.severity = silent
+dotnet_diagnostic.CA5369.severity = silent
+dotnet_diagnostic.CA5370.severity = silent
+dotnet_diagnostic.CA5371.severity = silent
+dotnet_diagnostic.CA5372.severity = silent
+dotnet_diagnostic.CA5373.severity = silent
+dotnet_diagnostic.CA5374.severity = silent
+dotnet_diagnostic.CA5375.severity = silent
+dotnet_diagnostic.CA5377.severity = silent
+dotnet_diagnostic.CA5378.severity = silent
+dotnet_diagnostic.CA5379.severity = silent
+dotnet_diagnostic.CA5382.severity = silent
+dotnet_diagnostic.CA5383.severity = silent
+dotnet_diagnostic.CA5384.severity = silent
+dotnet_diagnostic.CA5385.severity = silent
+dotnet_diagnostic.CA5386.severity = silent
+dotnet_diagnostic.CA5387.severity = silent
+dotnet_diagnostic.CA5388.severity = silent
+dotnet_diagnostic.CA5389.severity = silent
+dotnet_diagnostic.CA5391.severity = silent
+dotnet_diagnostic.CA5392.severity = silent
+dotnet_diagnostic.CA5393.severity = silent
+dotnet_diagnostic.CA5394.severity = silent
+dotnet_diagnostic.CA5395.severity = silent
+dotnet_diagnostic.CA5396.severity = silent
+dotnet_diagnostic.CA5397.severity = silent
+dotnet_diagnostic.CA5398.severity = silent
+dotnet_diagnostic.CA5400.severity = silent
+dotnet_diagnostic.CA5401.severity = silent
+dotnet_diagnostic.CA5402.severity = silent
+dotnet_diagnostic.CA5403.severity = silent
+dotnet_diagnostic.CA5404.severity = silent
+dotnet_diagnostic.CA5405.severity = silent
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
+end_of_line = crlf
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[*.cs]
+csharp_indent_labels = one_less_than_current
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_braces = true:silent
+csharp_style_namespace_declarations = block_scoped:silent
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_prefer_method_group_conversion = true:silent
+dotnet_diagnostic.CA1507.severity = warning
+[*.{cs,vb}]
+#### Naming styles ####
+
+# Naming rules
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers = 
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers = 
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers = 
+
+# Naming styles
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix = 
+dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent

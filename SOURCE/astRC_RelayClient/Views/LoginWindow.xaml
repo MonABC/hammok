@@ -1,0 +1,52 @@
+﻿<Window
+    x:Class="Hammock.AssetView.Platinum.Tools.RC.RelayClient.Views.LoginWindow"
+    Icon="/astRC_RelayClient;component/Resources/92_1.ico"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:viewModels="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient.ViewModels"
+    xmlns:common="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient.Common"
+    WindowStartupLocation="CenterScreen"
+    SnapsToDevicePixels="True"
+    mc:Ignorable="d"
+    Loaded="Window_Loaded"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    xmlns:properties="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient.Properties"
+    d:DataContext="{d:DesignInstance viewModels:LoginWindowViewModel, IsDesignTimeCreatable=False}"
+    Title="{x:Static properties:Resources.LoginWindow_WindowTitle}" SizeToContent="Height" Width="600" FontSize="13">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <StackPanel Orientation="Vertical" Margin="16" IsEnabled="{Binding IsEnabled}">
+        <GroupBox Header="{x:Static properties:Resources.LoginWindow_GroupBoxHeader}" VerticalAlignment="Top" Height="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0" Content="{x:Static properties:Resources.LoginWindow_CompanyId}" HorizontalAlignment="Left" Margin="8,8,0,8" />
+                <TextBox
+                    Grid.Row="0" Grid.Column="1" Text="{Binding CompanyId, UpdateSourceTrigger=PropertyChanged}" Margin="8" />
+                <Label
+                    Grid.Row="1" Content="{x:Static properties:Resources.LoginWindow_PasswordLabel}" HorizontalAlignment="Left" Margin="8" />
+                <PasswordBox
+                    Grid.Row="1" Grid.Column="1"
+                    common:PasswordBoxHelper.Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}" Margin="8" />
+            </Grid>
+        </GroupBox>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="{x:Static properties:Resources.OK}" Command="{Binding OkCommand}" Width="120" Margin="0,0,8,0" IsDefault="True" />
+            <Button Content="{x:Static properties:Resources.Cancel}" Command="{Binding CancelCommand}" Width="120" IsCancel="True" />
+        </StackPanel>
+    </StackPanel>
+</Window>

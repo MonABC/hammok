@@ -1,0 +1,21 @@
+以下の2つのファイルの使い方について説明する。
+・astRC_RelayService_Companies.esf
+・astRC_RelayService_CompanyPorts.esf
+
+これら2つのファイルは「astRC_RelayService」プロジェクトのデバッグのために使用するものである。
+
+「astRC_RelayService」プロジェクトにて、web.configのHostName欄にデバッグするPCのIPアドレスを入力。
+例)     <add key="HostName" value="192.168.102.30" />
+
+その後、上記のファイルを当該PCの以下のディレクトリにコピーする。
+（既に存在する場合は上書きしないこと。）
+
+C:\ProgramData\Hammock\PLATINUM\Server
+
+
+＝＝＝＝
+
+この後、クライアント側で、以下のID・パスワードを入力すると、このサーバーにログオン出来るようになる。
+    "id": "offshore",
+    "password": "0ph|=5/-/0"
+

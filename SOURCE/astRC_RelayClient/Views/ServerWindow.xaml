@@ -1,0 +1,43 @@
+﻿<UserControl
+    x:Class="Hammock.AssetView.Platinum.Tools.RC.RelayClient.Views.ServerWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:local="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient"
+    xmlns:viewModels="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient.ViewModels"
+    xmlns:properties="clr-namespace:Hammock.AssetView.Platinum.Tools.RC.RelayClient.Properties"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    SnapsToDevicePixels="True"
+    Loaded="Window_Loaded"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignInstance IsDesignTimeCreatable=False, Type={x:Type viewModels:ServerWindowViewModel}}">
+    <prism:Dialog.WindowStyle>
+        <Style TargetType="Window">
+            <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterScreen" />
+            <Setter Property="Icon" Value="/astRC_RelayClient;component/Resources/92_1.ico"/>
+            <Setter Property="Height" Value="500" />
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="SizeToContent" Value="Height"/>
+        </Style>
+    </prism:Dialog.WindowStyle>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <StackPanel Orientation="Vertical" Margin="16" IsEnabled="{Binding IsEnabled}">
+        <Label
+            Content="{Binding ExpiredTimeString}" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Center" />
+        <Label
+            Content="{x:Static properties:Resources.ServerWindow_PleseTellConnectionIdToManager}"
+            HorizontalAlignment="Stretch"  HorizontalContentAlignment="Center" />
+        <TextBox Text="{Binding SessionId}" IsReadOnly="True" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,8,0,0"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="{x:Static properties:Resources.End}" Command="{Binding CloseCommand}" Height="32" Width="120" IsCancel="True" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\astRC_RelayService.Core\Common\Encrypt.cs" Link="Utils\Encrypt.cs" />
+    <Compile Include="..\ast_CAutoUpdate\Models\DownloadLatestVersionModel.cs" Link="Models\DownloadLatestVersionModel.cs" />
+    <Compile Include="..\ast_CAutoUpdate\Models\GetLatestVersionModel.cs" Link="Models\GetLatestVersionModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\V1\AutoUpdate\DownloadLatestVersion\" />
+    <Folder Include="Controllers\V1\AutoUpdate\GetLatestVersionString\" />
+  </ItemGroup>
+
+</Project>

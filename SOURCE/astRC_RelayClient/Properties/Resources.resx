@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ProgramName" xml:space="preserve">
+    <value>AssetView RC RelayClient</value>
+  </data>
+  <data name="LoginWindow_CompanyId" xml:space="preserve">
+    <value>企業ID</value>
+  </data>
+  <data name="LoginWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient ログイン</value>
+  </data>
+  <data name="LoginWindow_GroupBoxHeader" xml:space="preserve">
+    <value>AssetView RC RelayServiceログイン設定</value>
+  </data>
+  <data name="LoginWindow_PasswordLabel" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_PleaseInputCompanyId" xml:space="preserve">
+    <value>企業IDを入力してください。</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_PleaseInputPassword" xml:space="preserve">
+    <value>パスワードを入力してください。</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_CanNotConnectRelayServer" xml:space="preserve">
+    <value>リレーサーバーへの接続に失敗しました。企業ID・パスワードを確認して、再度試行してください。</value>
+  </data>
+  <data name="UnableToConnectToTheCloud" xml:space="preserve">
+    <value>クラウドへ接続できませんでした。</value>
+  </data>
+  <data name="TooManySessions" xml:space="preserve">
+    <value>接続数の上限に達したため、セッションを作成できませんでした。</value>
+  </data>
+  <data name="WaitingForRemoteConnection" xml:space="preserve">
+    <value>リモート接続の待機を開始しています。</value>
+  </data>
+  <data name="AnUnexpectedErrorOccurred" xml:space="preserve">
+    <value>予期しないエラーが発生しました。</value>
+  </data>
+  <data name="HasAlreadyBeenInRunning" xml:space="preserve">
+    <value>「astRC_RelayClient.exe」は既に起動しています。</value>
+  </data>
+  <data name="ClientWindow_ConnectionIdDoesNotExists" xml:space="preserve">
+    <value>存在しない接続IDです。</value>
+  </data>
+  <data name="ClientWindow_TheConnectionIdHasExpired" xml:space="preserve">
+    <value>接続ID「{0}」は有効期限を過ぎています。</value>
+  </data>
+  <data name="ClientWindow_Waiting" xml:space="preserve">
+    <value>待機中</value>
+  </data>
+  <data name="GettingConnectionList" xml:space="preserve">
+    <value>接続リストを取得しています。</value>
+  </data>
+  <data name="SelectModeWindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient モード選択</value>
+  </data>
+  <data name="SwitchWindow_PleaseSelectOperation" xml:space="preserve">
+    <value>行う操作を選択してください。</value>
+  </data>
+  <data name="SwitchWindow_AcceptConnection" xml:space="preserve">
+    <value>リモートからの接続を受け付ける</value>
+  </data>
+  <data name="SwitchWindow_OperateRemoteComputer" xml:space="preserve">
+    <value>リモートのコンピューターを操作する</value>
+  </data>
+  <data name="ProgressWindow_WaitingForRemoteConnection" xml:space="preserve">
+    <value>リモート接続の待機を終了しています。</value>
+  </data>
+  <data name="ServerWindow_AreYouOkToQuitWaiting" xml:space="preserve">
+    <value>接続待機を終了してもよろしいですか？</value>
+  </data>
+  <data name="ServerWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient 待機</value>
+  </data>
+  <data name="ServerWindow_ConnectionIdIsValidUntil" xml:space="preserve">
+    <value>本接続IDは {0} まで有効です。</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="ServerWindow_PleseTellConnectionIdToManager" xml:space="preserve">
+    <value>以下の接続IDを管理者へお伝えください。</value>
+  </data>
+  <data name="ProgressWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient 進行状況</value>
+  </data>
+  <data name="ClientWindow_ConnectIdLabel" xml:space="preserve">
+    <value>接続ID:</value>
+  </data>
+  <data name="ClientWindow_StartConnection" xml:space="preserve">
+    <value>接続開始</value>
+  </data>
+  <data name="ClientWindow_ListOfConnection" xml:space="preserve">
+    <value>接続リスト</value>
+  </data>
+  <data name="ClientWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient 接続</value>
+  </data>
+  <data name="ClientWindow_ConnectionCount" xml:space="preserve">
+    <value>接続数:</value>
+  </data>
+  <data name="ClientWindow_LatestView" xml:space="preserve">
+    <value>最新表示</value>
+  </data>
+  <data name="ClientWindow_ForceTerminate" xml:space="preserve">
+    <value>強制終了</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ConnectionId" xml:space="preserve">
+    <value>接続ID</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_State" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_Expiration" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ClientHost" xml:space="preserve">
+    <value>クライアント端末ホスト名</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_CilentUser" xml:space="preserve">
+    <value>クライアント端末ログオンユーザー名</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ManageHost" xml:space="preserve">
+    <value>管理端末ホスト名</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ManageUser" xml:space="preserve">
+    <value>管理端末ログオンユーザー名</value>
+  </data>
+  <data name="NotActivated" xml:space="preserve">
+    <value>「AssetView RC」のアクティベーションが確認できませんでした。</value>
+  </data>
+  <data name="ClientWindow_DeletingConnection" xml:space="preserve">
+    <value>接続を削除しています。</value>
+  </data>
+  <data name="ClientWindow_AlreadyConnected" xml:space="preserve">
+    <value>接続ID「{0}」へは接続済みです。</value>
+  </data>
+  <data name="ClientWindow_Are_you_sure_you_want_to_close" xml:space="preserve">
+    <value>接続ID「{0}」の接続を終了してもよろしいですか？</value>
+  </data>
+  <data name="ClientWindow_Connecting" xml:space="preserve">
+    <value>接続中</value>
+  </data>
+  <data name="ClientWindow_WaitingForEndOfRemoteConnection" xml:space="preserve">
+    <value>リモート接続の終了を待機しています。</value>
+  </data>
+</root>

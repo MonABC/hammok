@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ProgramName" xml:space="preserve">
+    <value>AssetView RC RelayClient</value>
+  </data>
+  <data name="LoginWindow_CompanyId" xml:space="preserve">
+    <value>Company ID</value>
+  </data>
+  <data name="LoginWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient Login</value>
+  </data>
+  <data name="LoginWindow_GroupBoxHeader" xml:space="preserve">
+    <value>AssetView RC RelayService Login Setting</value>
+  </data>
+  <data name="LoginWindow_PasswordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_PleaseInputCompanyId" xml:space="preserve">
+    <value>Input company ID.</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_PleaseInputPassword" xml:space="preserve">
+    <value>Input password.</value>
+  </data>
+  <data name="LoginWindowViewModelValidator_CanNotConnectRelayServer" xml:space="preserve">
+    <value>Connection to a relay server failed. Please confirm a company-ID and a password, 
+and try again.</value>
+  </data>
+  <data name="UnableToConnectToTheCloud" xml:space="preserve">
+    <value>Connection to the cloud failed.</value>
+  </data>
+  <data name="TooManySessions" xml:space="preserve">
+    <value>Session creation failed due to connection number limit.</value>
+  </data>
+  <data name="WaitingForRemoteConnection" xml:space="preserve">
+    <value>Starting  remote connection  standby.</value>
+  </data>
+  <data name="AnUnexpectedErrorOccurred" xml:space="preserve">
+    <value>An unexpected error occurred.</value>
+  </data>
+  <data name="HasAlreadyBeenInRunning" xml:space="preserve">
+    <value>"astRC_RelayClient.exe" has already been in running state.</value>
+  </data>
+  <data name="NotActivated" xml:space="preserve">
+    <value>The activation of "AssetView RC" was not confirmed.</value>
+  </data>
+  <data name="ClientWindow_WaitingForEndOfRemoteConnection" xml:space="preserve">
+    <value>Waiting for the end of remote connection.</value>
+  </data>
+  <data name="ClientWindow_ConnectionIdDoesNotExists" xml:space="preserve">
+    <value>It is non-existing connection ID.</value>
+  </data>
+  <data name="ClientWindow_TheConnectionIdHasExpired" xml:space="preserve">
+    <value>Connection ID "{0}" had expired.</value>
+  </data>
+  <data name="ClientWindow_AlreadyConnected" xml:space="preserve">
+    <value>Connection ID "{0}" is already connected.</value>
+  </data>
+  <data name="ClientWindow_Connecting" xml:space="preserve">
+    <value>connecting</value>
+  </data>
+  <data name="ClientWindow_Waiting" xml:space="preserve">
+    <value>Standby</value>
+  </data>
+  <data name="GettingConnectionList" xml:space="preserve">
+    <value>Retrieving the connection list.</value>
+  </data>
+  <data name="ClientWindow_Are_you_sure_you_want_to_close" xml:space="preserve">
+    <value>Are you sure you want to terminate the connection for connection ID "{0}"?</value>
+  </data>
+  <data name="ClientWindow_DeletingConnection" xml:space="preserve">
+    <value>The connection is deleted.</value>
+  </data>
+  <data name="SelectModeWindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient Mode Selection</value>
+  </data>
+  <data name="SwitchWindow_PleaseSelectOperation" xml:space="preserve">
+    <value>Choose an operation to do.</value>
+  </data>
+  <data name="SwitchWindow_AcceptConnection" xml:space="preserve">
+    <value>Accept a connection from the remote</value>
+  </data>
+  <data name="SwitchWindow_OperateRemoteComputer" xml:space="preserve">
+    <value>Operate a remote computer</value>
+  </data>
+  <data name="ProgressWindow_WaitingForRemoteConnection" xml:space="preserve">
+    <value>The standby for remote connection is terminated.</value>
+  </data>
+  <data name="ServerWindow_AreYouOkToQuitWaiting" xml:space="preserve">
+    <value>Are you sure you want to terminate the standby connection?</value>
+  </data>
+  <data name="ServerWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient Waiting</value>
+  </data>
+  <data name="ServerWindow_ConnectionIdIsValidUntil" xml:space="preserve">
+    <value>This connection ID will have been valid until {0}.</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="ServerWindow_PleseTellConnectionIdToManager" xml:space="preserve">
+    <value>Please report following connection ID to the administrator.</value>
+  </data>
+  <data name="ProgressWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient Progress</value>
+  </data>
+  <data name="ClientWindow_ConnectIdLabel" xml:space="preserve">
+    <value>Connection ID:</value>
+  </data>
+  <data name="ClientWindow_StartConnection" xml:space="preserve">
+    <value>Connection Start</value>
+  </data>
+  <data name="ClientWindow_ListOfConnection" xml:space="preserve">
+    <value>Connection List</value>
+  </data>
+  <data name="ClientWindow_WindowTitle" xml:space="preserve">
+    <value>AssetView RC RelayClient Connection</value>
+  </data>
+  <data name="ClientWindow_ConnectionCount" xml:space="preserve">
+    <value>Connection Count:</value>
+  </data>
+  <data name="ClientWindow_LatestView" xml:space="preserve">
+    <value>Latest View</value>
+  </data>
+  <data name="ClientWindow_ForceTerminate" xml:space="preserve">
+    <value>Force Terminate</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ConnectionId" xml:space="preserve">
+    <value>Connection ID</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_State" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_Expiration" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ClientHost" xml:space="preserve">
+    <value>Client Terminal Hostname</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_CilentUser" xml:space="preserve">
+    <value>Client Terminal Logon Username</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ManageHost" xml:space="preserve">
+    <value>Administrator Terminal Hostname</value>
+  </data>
+  <data name="ClientWindow_GridViewColumn_ManageUser" xml:space="preserve">
+    <value>Administrator Terminal Logon Username</value>
+  </data>
+</root>

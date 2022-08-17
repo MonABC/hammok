@@ -1,0 +1,54 @@
+Azure.RequestFailedException: The specified blob does not exist.
+RequestId:4831d3c0-801e-0039-7954-aca8e9000000
+Time:2022-08-10T00:58:28.3834919Z
+Status: 404 (The specified blob does not exist.)
+ErrorCode: BlobNotFound
+
+Content:
+<?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:4831d3c0-801e-0039-7954-aca8e9000000
+Time:2022-08-10T00:58:28.3834919Z</Message></Error>
+
+Headers:
+Server: Windows-Azure-Blob/1.0,Microsoft-HTTPAPI/2.0
+x-ms-request-id: 4831d3c0-801e-0039-7954-aca8e9000000
+x-ms-client-request-id: f1e1a3e7-becc-44b0-abca-ff3f8e0da03b
+x-ms-version: 2021-08-06
+x-ms-error-code: BlobNotFound
+Date: Wed, 10 Aug 2022 00:58:28 GMT
+Content-Length: 215
+Content-Type: application/xml
+
+   at Azure.Storage.Blobs.BlobRestClient.DownloadAsync(String snapshot, String versionId, Nullable`1 timeout, String range, String leaseId, Nullable`1 rangeGetContentMD5, Nullable`1 rangeGetContentCRC64, String encryptionKey, String encryptionKeySha256, Nullable`1 encryptionAlgorithm, Nullable`1 ifModifiedSince, Nullable`1 ifUnmodifiedSince, String ifMatch, String ifNoneMatch, String ifTags, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StartDownloadAsync(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, Int64 startOffset, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadStreamingInternal(HttpRange range, BlobRequestConditions conditions, Boolean rangeGetContentHash, IProgress`1 progressHandler, String operationName, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.PartitionedDownloader.DownloadToAsync(Stream destination, BlobRequestConditions conditions, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.StagedDownloadAsync(Stream destination, BlobRequestConditions conditions, IProgress`1 progressHandler, StorageTransferOptions transferOptions, Boolean async, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadToAsync(Stream destination, BlobRequestConditions conditions, StorageTransferOptions transferOptions, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadToAsync(Stream destination, CancellationToken cancellationToken)
+   at Azure.Storage.Blobs.Specialized.BlobBaseClient.DownloadToAsync(Stream destination)
+   at ast_SAutoUpdateService.Controllers.V1.AutoUpdate.DownloadLatestVersion.DownloadLatestVersionController.DownloadLatestVersionInternal(String blobName) in C:\Repos\RCRelay\Source\ast_SAutoUpdateService\Controllers\V1\AutoUpdate\DownloadLatestVersion\downloadLatestVersionController.cs:line 45
+   at ast_SAutoUpdateService.Controllers.V1.AutoUpdate.DownloadLatestVersion.DownloadLatestVersionController.DownloadLatestVersion(DownloadLatestVersionModel model) in C:\Repos\RCRelay\Source\ast_SAutoUpdateService\Controllers\V1\AutoUpdate\DownloadLatestVersion\downloadLatestVersionController.cs:line 23
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+HEADERS
+=======
+Connection: keep-alive
+Host: localhost:7000
+Content-Type: application/json; charset=utf-8
+Expect: 100-continue
+Content-Length: 56

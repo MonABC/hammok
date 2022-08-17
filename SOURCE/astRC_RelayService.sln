@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "astRC_RelayService", "astRC_RelayService\astRC_RelayService.csproj", "{609D8520-4B46-4B54-8078-6970D55DFAEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "astRC_RelayService.Core", "astRC_RelayService.Core\astRC_RelayService.Core.csproj", "{D510489A-7771-4183-AAF2-975623C7917E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "astRC_RelayService.Models", "astRC_RelayService.Models\astRC_RelayService.Models.csproj", "{B9566F13-DD8E-4075-A5EF-120B3AAF116A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD6BAACE-2D52-46BE-A0EE-16886F87B7D3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{609D8520-4B46-4B54-8078-6970D55DFAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609D8520-4B46-4B54-8078-6970D55DFAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609D8520-4B46-4B54-8078-6970D55DFAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609D8520-4B46-4B54-8078-6970D55DFAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D510489A-7771-4183-AAF2-975623C7917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D510489A-7771-4183-AAF2-975623C7917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D510489A-7771-4183-AAF2-975623C7917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D510489A-7771-4183-AAF2-975623C7917E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9566F13-DD8E-4075-A5EF-120B3AAF116A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9566F13-DD8E-4075-A5EF-120B3AAF116A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9566F13-DD8E-4075-A5EF-120B3AAF116A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9566F13-DD8E-4075-A5EF-120B3AAF116A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A894C5A-79E5-496E-8463-FA35D3948833}
+	EndGlobalSection
+EndGlobal
